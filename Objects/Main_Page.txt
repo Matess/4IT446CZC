@@ -1,0 +1,4 @@
+*** Variables ***
+${showLogin}      id=login
+${usernameId}     id=frm-name
+${passwordId}     id=frm-password

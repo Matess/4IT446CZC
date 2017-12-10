@@ -1,0 +1,17 @@
+*** Settings ***
+Library           Selenium2Library
+Resource          ../Objects/Main_Page.txt
+
+*** Keywords ***
+Open CZC
+    [Arguments]    ${url}    ${browser}
+    Open Browser    ${url}    ${browser}
+
+Login CZC
+    [Arguments]    ${username}    ${password}
+    Wait Until Page Contains Element    ${showLogin}
+    Click Element    ${showLogin}
+    Wait Until Page Contains Element    ${usernameId}
+    Input Text    ${usernameId}    ${username}
+    Input Password    ${passwordId}    ${password}
+    Click Element    xpath=//button[@class="btn submit"]

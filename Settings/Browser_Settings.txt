@@ -1,0 +1,5 @@
+*** Variables ***
+${browser}        chrome
+${url}            https://www.czc.cz/
+${loginName}      Robo446
+${loginPass}      123456
