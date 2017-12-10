@@ -15,3 +15,10 @@ Login CZC
     Input Text    ${usernameId}    ${username}
     Input Password    ${passwordId}    ${password}
     Click Element    xpath=//button[@class="btn submit"]
+
+Search for
+    [Arguments]    ${searchString}
+    Wait Until Element Is Visible    ${searchBar}
+    Input Text    ${searchBar}    ${searchString}
+    Click Button    ${searchBarSubmitButton}
+    Wait Until Element Is Visible    product-list-container
