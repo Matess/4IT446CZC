@@ -1,0 +1,29 @@
+Started by user [8mha:////4Mo1q6L/dtw56MGtxbnkt5C6/gWcDpZtqADBFGCqOuNAAAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzWEgZu/dLi1CL9xJTczDwAj6GcLcAAAAA=[0madmin
+Building in workspace C:\Users\Matej\.jenkins\workspace\Robot
+[Robot] $ cmd /c call C:\Users\Matej\AppData\Local\Temp\jenkins6251159950686600692.bat
+
+C:\Users\Matej\.jenkins\workspace\Robot>if exist "Results" rd Results /s/q 
+
+C:\Users\Matej\.jenkins\workspace\Robot>mkdir Results 
+
+C:\Users\Matej\.jenkins\workspace\Robot>robot --outputdir "C:\Users\Matej\.jenkins\workspace\Robot\Results" C:\Users\Matej\Desktop\CZC_4IT446\CZC_4IT446\Tests 
+==============================================================================
+Tests                                                                         
+==============================================================================
+Tests.LoginTest                                                               
+==============================================================================
+LoginTest                                                             | PASS |
+------------------------------------------------------------------------------
+Tests.LoginTest                                                       | PASS |
+1 critical test, 1 passed, 0 failed
+1 test total, 1 passed, 0 failed
+==============================================================================
+Tests                                                                 | PASS |
+1 critical test, 1 passed, 0 failed
+1 test total, 1 passed, 0 failed
+==============================================================================
+Output:  C:\Users\Matej\.jenkins\workspace\Robot\Results\output.xml
+Log:     C:\Users\Matej\.jenkins\workspace\Robot\Results\log.html
+Report:  C:\Users\Matej\.jenkins\workspace\Robot\Results\report.html
+Process leaked file descriptors. See https://jenkins.io/redirect/troubleshooting/process-leaked-file-descriptors for more information
+Finished: SUCCESS

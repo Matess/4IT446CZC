@@ -22,3 +22,8 @@ Search for
     Input Text    ${searchBar}    ${searchString}
     Click Button    ${searchBarSubmitButton}
     Wait Until Element Is Visible    product-list-container
+    
+Close login modal
+    wait until page contains element    ${modalClose}
+    click element    ${modalClose}
+    wait until page does not contain element    ${loginform}
