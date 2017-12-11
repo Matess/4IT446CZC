@@ -2,18 +2,10 @@
 ${showLogin}      id=login
 ${usernameId}     id=frm-name
 ${passwordId}     id=frm-password
-${termsLink}      css=#footer-links > div.footer-links-container > div.links-block-container > div:nth-child(2) > ul > li:nth-child(1) > a
-${termsContent}    css=#docs-internal-guid-e40922b1-e43e-f867-b22a-0e2a2f35977e
 ${testProduct}    ASUS Lyra
-${rateButton}     //a[contains(text(),"Přidat vlastní hodnocení")]
-${newReviewForm}    id=new-review-form
 ${searchBar}      id=fulltext
 ${searchBarSubmitButton}    fulltextSubmit
-${addToBasketTileButton}    css=button[title='Přidat zboží do košíku']
-${inTheBasketInfo}    css=div#buy-mode-product-info
-${inTheBasketProduct}    //div[h1[text()="Zboží jsme vložili do košíku"]]//div[@class="td product-name"]/a
 ${basketInfoSteady}    css=div#basket-info > a
 ${basketInfoHover}    css=div#basket-info > a.hover
 ${basketRemove}    css=i[title="Odstranit z košíku"]
 ${modalClose}     //a[@aria-label="zavřít"]
-${addToFavTileButton}    //*[@id="product-detail"]/div[2]/div[3]/div[3]/a[2]/span

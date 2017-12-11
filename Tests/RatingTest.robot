@@ -1,10 +1,15 @@
 *** Settings ***
 Suite Setup       Open CZC    ${url}    ${browser}
 Test Setup        Search For    ${testProduct}
+Test Teardown     Close Browser
 Library           Selenium2Library
 Resource          ../Settings/Browser_Settings.txt
 Resource          ../Keywords/Browser_Keywords.txt
 Resource          ../Objects/Main_Page.txt
+
+*** Variables ***
+${rateButton}     //a[contains(text(),"Přidat vlastní hodnocení")]
+${newReviewForm}    id=new-review-form
 
 *** Test Cases ***
 RatingTest
