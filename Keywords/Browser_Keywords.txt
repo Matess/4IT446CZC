@@ -22,8 +22,23 @@ Search for
     Input Text    ${searchBar}    ${searchString}
     Click Button    ${searchBarSubmitButton}
     Wait Until Element Is Visible    product-list-container
-    
+
 Close login modal
     wait until page contains element    ${modalClose}
     click element    ${modalClose}
     wait until page does not contain element    ${loginform}
+
+Verify Error Messages
+    [Arguments]    ${message1}    ${message2}
+    Page Should Not Contain    ${message1}
+    Page Should Not Contain    ${message2}
+
+Verification of Search1
+    [Arguments]    ${text}
+    Page Should Contain    Niceboy VEGA+ Remote    Loglevel=info
+    Element Should Be Visible    xpath=//a[contains(@href,'/niceboy-vega-remote/209994/produkt')]    message=Niceboy VEGA+ Remote
+
+Verification of Search2
+    [Arguments]    ${text}
+    Page Should Contain    218429    Loglevel=info
+    Element Should Be Visible    xpath=//a[contains(@href,'/niceboy-hive-sport-cerna/218429/produkt')]    message=Niceboy Hive sport, černá

@@ -12,5 +12,9 @@ ${lowerMessage}    nesprávné heslo
 
 *** Test Cases ***
 LoginTest
-    Login CZC    ${loginName}    ${loginPass}
+    Login CZC    czctestingtest    Testing123
     Verify Error Messages    ${topMessage}    ${lowerMessage}
+    Search for    Niceboy VEGA+ Remote
+    Verification of Search1    Niceboy VEGA+ Remote
+    Search for    218429
+    Verification of Search2    Niceboy Hive sport, černá
