@@ -32,6 +32,11 @@ Verify Error Messages
     [Arguments]    ${message1}    ${message2}
     Page Should Not Contain    ${message1}
     Page Should Not Contain    ${message2}
+    
+Throw product off the basket
+    mouse over  ${basketInfoSteady}
+    wait until page contains element  ${basketInfoHover}
+    click element  ${basketRemove}
 
 Verification of Search1
     [Arguments]    ${text}
