@@ -21,4 +21,4 @@ AddBasketTest
     wait until page contains element    ${inTheBasketInfo}
     wait until page contains element    ${inTheBasketProduct}[contains(text(),"${testProduct}")]
     click element    ${modalClose}
-    [Teardown]  Throw product off the basket
+    Throw product off the basket
